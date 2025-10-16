@@ -7,7 +7,7 @@ const dx = [1, -1, 0, 0];
 const dy = [0, 0, 1, -1];
 
 for (let t = 0; t < T; t++) {
-  const [M, N, K] = input[idx++].split(" ").map(Number); // M=가로(열), N=세로(행)
+  const [M, N, K] = input[idx++].split(" ").map(Number); // M=가로, N=세로
   const field = Array.from({ length: N }, () => Array(M).fill(0));
   const visited = Array.from({ length: N }, () => Array(M).fill(false));
 
